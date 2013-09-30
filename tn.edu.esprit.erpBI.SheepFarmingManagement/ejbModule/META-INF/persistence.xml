@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="tn.edu.esprit.erpBI.SheepFarmingManagement">
+		<jta-data-source>java:/sheepManagementDS</jta-data-source>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.Sheep</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.User</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.Role</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.Publication</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.Comment</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.Loop</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.Reproduction</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.NaturalReproduction</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.ControlledReproduction</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.ArtificalInsemination</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.InputConditions</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.OutputConditions</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.ExitWithoutRecipe</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.ExitWithRecipe</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.saleForReform</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.VolontarySale</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.ConsultationPk</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.Consultation</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.VisibilityPK</class>
+		<class>tn.edu.esprit.erpBi.sheepManagementProject.domain.Visibility</class>
+
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
